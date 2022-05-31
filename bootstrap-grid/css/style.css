@@ -1,0 +1,43 @@
+/* IMPORTANTE -> COMENZAR SIEMPRE CON ESTA REGLA */
+
+img {
+    width: 100%;
+}
+
+
+/* MAQUETACIÓN MENÚ */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu img {
+    width: 200px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+
+
+/* MAQUETACIÓN HERO */
+
+.hero {
+    background-color: rgb(201, 247, 194);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.info {
+    margin-top: 50px;
+}

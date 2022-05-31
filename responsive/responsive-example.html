@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox example</title>
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%
+        }
+
+        .hero {
+            background: rgba(0, 0, 0, .1);
+            margin-bottom: 100px;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 7em;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin: 100px 0;
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .info-section article {
+            width: 20%;
+        }
+
+        .mobile-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .mobile-section figure {
+            width: 50%;
+        }
+
+        .mobile-section article {
+            width: 30%;
+        }
+
+        @media screen and (max-width: 980px) {
+
+            h1 {
+                font-size: 5em;
+            }
+
+            .info-section article {
+                width: 40%;
+                margin-bottom: 20px;
+            }
+
+            .mobile-section article {
+                width: 40%;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+            h1 {
+                font-size: 5em;
+            }
+
+            .info-section article {
+                width: 90%;
+            }
+
+            .mobile-section figure {
+                width: 90%;
+            }
+
+            .mobile-section article {
+                width: 90%;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <header class="hero">
+            <h1>Ejemplo flexbox</h1>
+        </header>
+
+        <section class="info-section">
+
+            <article>
+                <h2>Columna 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptate totam illum in
+                    consequatur, excepturi possimus ratione aperiam reprehenderit mollitia? Cumque vero sed esse nostrum
+                    nulla omnis aliquam adipisci. Non.</p>
+            </article>
+
+            <article>
+                <h2>Columna 1</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptate totam illum in
+                    consequatur, excepturi possimus ratione aperiam reprehenderit mollitia? Cumque vero sed esse nostrum
+                    nulla omnis aliquam adipisci. Non.</p>
+            </article>
+
+            <article>
+                <h2>Columna 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, autem expedita. Asperiores unde
+                    quibusdam sit maiores inventore officiis quas, porro, esse sequi quod magnam veritatis accusantium.
+                    Aliquam excepturi repellendus iste?</p>
+            </article>
+
+            <article>
+                <h2>Columna 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, autem expedita. Asperiores unde
+                    quibusdam sit maiores inventore officiis quas, porro, esse sequi quod magnam veritatis accusantium.
+                    Aliquam excepturi repellendus iste?</p>
+            </article>
+
+        </section>
+
+
+        <section class="mobile-section">
+
+            <figure>
+                <img src="https://cosasdigitales.com/wp-content/uploads/2018/11/cosas-digitales-tipos-animaciones-funcionales-web.jpg"
+                    alt="movil">
+            </figure>
+
+            <article>
+                <h2>Texto explicativo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, temporibus architecto? Exercitationem
+                    quaerat esse deleniti explicabo qui est omnis unde commodi, obcaecati voluptas ipsa vero. Doloremque
+                    architecto in deserunt consectetur!</p>
+            </article>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
